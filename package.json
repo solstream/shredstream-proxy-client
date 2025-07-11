@@ -1,7 +1,7 @@
 {
-  "name": "@solstream/shredstream-grpc",
+  "name": "@solstream/shredstream-proxy",
   "version": "0.0.1",
-  "description": "TypeScript gRPC client for Jito ShredStream.",
+  "description": "TypeScript gRPC client for Jito Shredstream Proxy.",
   "type": "module",
   "exports": {
     "types": "./dist/index.d.ts",
