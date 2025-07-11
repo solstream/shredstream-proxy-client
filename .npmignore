@@ -2,10 +2,11 @@
 .github
 .husky
 .vscode
+proto
 src
 .gitignore
 .npmignore
-.nvm
+.nvmrc
 .prettierignore
 eslint.config.js
 test-results.json
