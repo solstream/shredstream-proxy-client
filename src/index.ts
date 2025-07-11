@@ -1,21 +1,21 @@
 import { ChannelCredentials } from "@grpc/grpc-js";
 import { GrpcTransport } from "@protobuf-ts/grpc-transport";
 
-import { type Timestamp } from "./generated/google/protobuf/timestamp";
-import { type Socket } from "./generated/shared";
+import { Timestamp } from "./generated/google/protobuf/timestamp";
+import { Socket } from "./generated/shared";
 import {
-  type CommitmentLevel,
-  type Entry,
-  type Heartbeat,
-  type HeartbeatResponse,
-  type SubscribeEntriesRequest,
-  type SubscribeRequestFilterAccounts,
-  type SubscribeRequestFilterAccountsFilter,
-  type SubscribeRequestFilterAccountsFilterLamports,
-  type SubscribeRequestFilterAccountsFilterMemcmp,
-  type SubscribeRequestFilterSlots,
-  type SubscribeRequestFilterTransactions,
-  type TraceShred,
+  CommitmentLevel,
+  Entry,
+  Heartbeat,
+  HeartbeatResponse,
+  SubscribeEntriesRequest,
+  SubscribeRequestFilterAccounts,
+  SubscribeRequestFilterAccountsFilter,
+  SubscribeRequestFilterAccountsFilterLamports,
+  SubscribeRequestFilterAccountsFilterMemcmp,
+  SubscribeRequestFilterSlots,
+  SubscribeRequestFilterTransactions,
+  TraceShred,
 } from "./generated/shredstream";
 import { ShredstreamProxyClient } from "./generated/shredstream.client";
 
@@ -39,18 +39,18 @@ export function createShredstreamProxyClient(endpointUrl: string) {
 }
 
 export {
-  type Timestamp as ProtobufTimestamp,
-  type CommitmentLevel as ShredstreamCommitmentLevel,
-  type Entry as ShredstreamEntry,
-  type Heartbeat as ShredstreamHeartbeat,
-  type HeartbeatResponse as ShredstreamHeartbeatResponse,
-  type SubscribeEntriesRequest as ShredstreamSubscribeEntriesRequest,
-  type SubscribeRequestFilterAccounts as ShredstreamSubscribeRequestFilterAccounts,
-  type SubscribeRequestFilterAccountsFilter as ShredstreamSubscribeRequestFilterAccountsFilter,
-  type SubscribeRequestFilterAccountsFilterLamports as ShredstreamSubscribeRequestFilterAccountsFilterLamports,
-  type SubscribeRequestFilterAccountsFilterMemcmp as ShredstreamSubscribeRequestFilterAccountsFilterMemcmp,
-  type SubscribeRequestFilterSlots as ShredstreamSubscribeRequestFilterSlots,
-  type SubscribeRequestFilterTransactions as ShredstreamSubscribeRequestFilterTransactions,
-  type TraceShred as ShredstreamTraceShred,
-  type Socket,
+  Timestamp as ProtobufTimestamp,
+  CommitmentLevel as ShredstreamCommitmentLevel,
+  Entry as ShredstreamEntry,
+  Heartbeat as ShredstreamHeartbeat,
+  HeartbeatResponse as ShredstreamHeartbeatResponse,
+  SubscribeEntriesRequest as ShredstreamSubscribeEntriesRequest,
+  SubscribeRequestFilterAccounts as ShredstreamSubscribeRequestFilterAccounts,
+  SubscribeRequestFilterAccountsFilter as ShredstreamSubscribeRequestFilterAccountsFilter,
+  SubscribeRequestFilterAccountsFilterLamports as ShredstreamSubscribeRequestFilterAccountsFilterLamports,
+  SubscribeRequestFilterAccountsFilterMemcmp as ShredstreamSubscribeRequestFilterAccountsFilterMemcmp,
+  SubscribeRequestFilterSlots as ShredstreamSubscribeRequestFilterSlots,
+  SubscribeRequestFilterTransactions as ShredstreamSubscribeRequestFilterTransactions,
+  TraceShred as ShredstreamTraceShred,
+  Socket,
 };
